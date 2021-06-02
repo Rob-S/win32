@@ -53,9 +53,8 @@ Number (long)indicating the type of change that occurred to the string collectio
 
 
 
-|        |                                    |
-|--------|------------------------------------|
 | Number | Description                        |
+|--------|------------------------------------|
 | 0      | Unknown. (Not a valid value)       |
 | 1      | An item was inserted.              |
 | 2      | The string collection changed.     |
@@ -89,7 +88,7 @@ This event does not return a value.
 
 
 
-|                    |                                                                                    |
+| Requirement | Value |
 |--------------------|------------------------------------------------------------------------------------|
 | Version<br/> | Windows Media Player 11.<br/>                                                |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
