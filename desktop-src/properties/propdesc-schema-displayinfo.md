@@ -281,8 +281,8 @@ If there are multiple elements, the last one is used. If no [displayInfo]() elem
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -316,11 +316,11 @@ If there are multiple elements, the last one is used. If no [displayInfo]() elem
 </tr>
 <tr class="odd">
 <td>Boolean</td>
-<td>Default if <typeInfo type=&quot;Boolean&quot;>. Value is displayed as a boolean. Use &quot;booleanFormat&quot; to format. Method returns PDDT_BOOLEAN.</td>
+<td>Default if \<typeInfo type=&quot;Boolean&quot;\>. Value is displayed as a boolean. Use &quot;booleanFormat&quot; to format. Method returns PDDT_BOOLEAN.</td>
 </tr>
 <tr class="even">
 <td>DateTime</td>
-<td>Default if <typeInfo type=&quot;DateTime&quot;>. Value is displayed as a date or time. Use &quot;dateTimeFormat&quot; to format. Method returns PDDT_DATETIME.</td>
+<td>Default if \<typeInfo type=&quot;DateTime&quot;\>. Value is displayed as a date or time. Use &quot;dateTimeFormat&quot; to format. Method returns PDDT_DATETIME.</td>
 </tr>
 <tr class="odd">
 <td>Enumeration</td>

@@ -9,7 +9,7 @@ keywords:
 - service principal name AD
 - service principal name AD , about
 ms.topic: article
-ms.date: 05/31/2018
+ms.date: 09/10/2021
 ---
 
 # Service Principal Names
@@ -21,8 +21,6 @@ If you install multiple instances of a service on computers throughout a forest,
 Before the Kerberos authentication service can use an SPN to authenticate a service, the SPN must be registered on the account object that the service instance uses to log on. A given SPN can be registered on only one account. For Win32 services, a service installer specifies the logon account when an instance of the service is installed. The installer then composes the SPNs and writes them as a property of the account object in Active Directory Domain Services. If the logon account of a service instance changes, the SPNs must be re-registered under the new account. For more information, see [How a Service Registers its SPNs](how-a-service-registers-its-spns.md).
 
 When a client wants to connect to a service, it locates an instance of the service, composes an SPN for that instance, connects to the service, and presents the SPN for the service to authenticate. For more information, see [How Clients Compose a Service's SPN](how-clients-compose-a-serviceampaposs-spn.md).
-
-## In this Section
 
 ## In this section
 
@@ -49,7 +47,3 @@ When a client wants to connect to a service, it locates an instance of the servi
 
 [Mutual Authentication Using Kerberos](mutual-authentication-using-kerberos.md)
 </dt> </dl>
-
- 
-
- 

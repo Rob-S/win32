@@ -17,7 +17,6 @@ keywords:
 - colors,obsolete functions
 - WCS reference,obsolete functions
 - reference for WCS,obsolete functions
-ms.localizationpriority: high
 
 
 ms.topic: article
@@ -30,7 +29,7 @@ This section delineates functions that are obsolete in WCS 1.0. They are current
 
 
 
-|                                            |                                              |
+|     Function                               |      Description                             |
 |--------------------------------------------|----------------------------------------------|
 | [**UpdateICMRegKey**](/windows/desktop/api/Wingdi/nf-wingdi-updateicmregkeya) | *Obsolete*: manages color profiles and CMMs. |
 

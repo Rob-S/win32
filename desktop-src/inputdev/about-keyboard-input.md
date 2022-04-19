@@ -111,9 +111,44 @@ An application can use the following values to manipulate the keystroke flags.
 | **KF\_REPEAT**   | Manipulates the previous key state flag.                                          |
 | **KF\_UP**       | Manipulates the transition state flag.                                            |
 
+Example code:
 
+```cpp
+case WM_KEYDOWN:
+case WM_KEYUP:
+case WM_SYSKEYDOWN:
+case WM_SYSKEYUP:
+{
+    WORD vkCode = LOWORD(wParam);                                       // virtual-key code
 
- 
+    BYTE scanCode = LOBYTE(HIWORD(lParam));                             // scan code
+    BOOL isExtendedKey = (HIWORD(lParam) & KF_EXTENDED) == KF_EXTENDED; // extended-key flag, 1 if scancode has 0xe0 prefix
+
+    BOOL repeatFlag = (HIWORD(lParam) & KF_REPEAT) == KF_REPEAT;        // previous key-state flag, 1 on autorepeat
+    WORD repeatCount = LOWORD(lParam);                                  // repeat count, > 0 if several keydown messages was combined into one message
+
+    BOOL upFlag = (HIWORD(lParam) & KF_UP) == KF_UP;                    // transition-state flag, 1 on keyup
+
+    if (isExtendedKey)
+        scanCode |= 0xe0 << 8u;
+
+    // if we want to distinguish:
+    // - VK_LSHIFT and VK_RSHIFT
+    // - VK_LCONTROL and VK_RCONTROL
+    // - VK_LMENU and VK_RMENU
+    switch (vkCode)
+    {
+    case VK_SHIFT:
+    case VK_CONTROL:
+    case VK_MENU:
+        vkCode = LOWORD(MapVirtualKeyW(scanCode, MAPVK_VSC_TO_VK_EX));
+        break;
+    }
+
+    // ...
+}
+break;
+```
 
 ### Repeat Count
 
@@ -126,6 +161,8 @@ The scan code is the value that the keyboard hardware generates when the user pr
 ### Extended-Key Flag
 
 The extended-key flag indicates whether the keystroke message originated from one of the additional keys on the enhanced keyboard. The extended keys consist of the ALT and CTRL keys on the right-hand side of the keyboard; the INS, DEL, HOME, END, PAGE UP, PAGE DOWN, and arrow keys in the clusters to the left of the numeric keypad; the NUM LOCK key; the BREAK (CTRL+PAUSE) key; the PRINT SCRN key; and the divide (/) and ENTER keys in the numeric keypad. The extended-key flag is set if the key is an extended key.
+
+If specified, the scan code was preceded by a prefix byte having the value 0xE0 (224).
 
 ### Context Code
 

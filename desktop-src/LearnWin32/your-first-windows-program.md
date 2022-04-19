@@ -3,7 +3,7 @@ title: Module 1. Your First Windows Program
 description: Module 1. Your First Windows Program
 ms.assetid: 73848144-bf02-4382-a476-7f5a35447727
 ms.topic: article
-ms.date: 05/31/2018
+ms.date: 09/10/2021
 ---
 
 # Module 1. Your First Windows Program
@@ -66,7 +66,7 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PWSTR pCmdLine
     // Run the message loop.
 
     MSG msg = { };
-    while (GetMessage(&msg, NULL, 0, 0))
+    while (GetMessage(&msg, NULL, 0, 0) > 0)
     {
         TranslateMessage(&msg);
         DispatchMessage(&msg);
@@ -88,7 +88,7 @@ LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
             PAINTSTRUCT ps;
             HDC hdc = BeginPaint(hwnd, &ps);
 
-
+            // All painting occurs here, between BeginPaint and EndPaint.
 
             FillRect(hdc, &ps.rcPaint, (HBRUSH) (COLOR_WINDOW+1));
 

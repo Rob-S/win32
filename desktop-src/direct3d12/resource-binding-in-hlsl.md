@@ -2,7 +2,6 @@
 title: Resource binding in HLSL
 description: This topic describes some specific features of using High Level Shader Language (HLSL) Shader Model 5.1 with Direct3D 12.
 ms.assetid: 3CD4BDAD-8AE3-4DE0-B3F8-9C9F9E83BBE9
-ms.localizationpriority: high
 ms.topic: article
 ms.date: 08/27/2019
 ---
@@ -51,7 +50,7 @@ Texture2D<float4> tex1[] : register(t0)
 The matching descriptor table could be:
 
 ``` syntax
-DescriptorTable( CBV(b1), UAV(u0, numDescriptors = 4), SRV(t0, numDescriptors=unbounded)
+DescriptorTable( CBV(b1), UAV(u0, numDescriptors = 4), SRV(t0, numDescriptors=unbounded) )
 ```
 
 An unbounded array in HLSL does match a fixed number set with `numDescriptors` in the descriptor table, and a fixed size in the HLSL does match an unbounded declaration in the descriptor table.

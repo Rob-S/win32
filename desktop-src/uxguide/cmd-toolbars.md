@@ -1,12 +1,13 @@
 ---
-title: Toolbars
-description: Toolbars are a way to group commands for efficient access.
+title: Windows 7 Toolbars
+description: Windows 7 Toolbars are a way to group commands for efficient access.
 ms.assetid: 8f36307c-54fc-493d-a2ff-57db29e3508d
 ms.topic: article
-ms.date: 10/20/2020
+ms.date: 01/25/2022
+ms.custom: seo-windows-dev
 ---
 
-# Toolbars
+# Windows 7 Toolbars
 
 > [!NOTE]
 > This design guide was created for Windows 7 and has not been updated for newer versions of Windows. Much of the guidance still applies in principle, but the presentation and examples do not reflect our [current design guidance](/windows/uwp/design/).
@@ -23,8 +24,6 @@ Some toolbars are customizable, allowing users to add or remove toolbars, change
 
 > [!Note]  
 > Guidelines related to [menus](cmd-menus.md), [command buttons](ctrl-command-buttons.md), and [icons](vis-icons.md) are presented in separate articles.
-
- 
 
 ## Is this the right user interface?
 
@@ -122,7 +121,7 @@ Toolbars have several usage patterns:
 
 
 
-|                                                                                                                      |                                                                                                                                                                                                                                                                                                                                                    |
+|     Usage                                                                                                                 |     Example                                                                                                                                                                                                                                                                                                                                          |
 |----------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Primary toolbars**<br/> a toolbar designed to work without a menu bar, either hidden or removed. <br/> | primary toolbars must balance the need for efficiency with comprehensiveness, so they work best for simple programs. <br/> ![screen shot of windows explorer toolbar ](images/cmd-toolbars-image8.png)<br/> A primary toolbar from Windows Explorer.<br/>                                                                        |
 | **Supplemental toolbars**<br/> a toolbar designed to work with a menu bar. <br/>                         | supplemental toolbars can focus on efficiency without compromise. <br/> ![screen shot of a menu bar over a toolbar ](images/cmd-toolbars-image9.png)<br/> A supplemental toolbar from Windows Movie Maker.<br/>                                                                                                                  |
@@ -138,7 +137,7 @@ Toolbars have these styles:
 
 
 
-|                                                                                                                                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+|   Style                                                                                                                                     | Example                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 |----------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Unlabeled icons**<br/> one or more rows of small unlabeled icon buttons. <br/>                                           | use this style if there are too many buttons to label or the program is frequently used. with this style, programs with complex functionality can have multiple rows, and therefore, this is the only style that needs to be customizable. with this style, some command buttons can be labeled if they are frequently used. <br/> ![screen shot of toolbar with small, unlabeled icons ](images/cmd-toolbars-image14.png)<br/> An unlabeled icons toolbar from WordPad.<br/> |
 | **Large unlabeled icons**<br/> a single row of large unlabeled icon buttons. <br/>                                         | use this style for simple utilities that have easily recognizable icons and are usually run in small windows. <br/> ![screen shot of toolbar with large, unlabeled icons ](images/cmd-toolbars-image15.png)<br/> ![screen shot of toolbar with large icons ](images/cmd-toolbars-image16.png)<br/> Large unlabeled icons toolbars from Windows Live Messenger and the Windows Snipping Tool.<br/>                                                                       |
@@ -154,7 +153,7 @@ Finally, toolbar controls have several usage patterns:
 
 
 
-|                                                                                                                                                                                                          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|     Usage                                                                                                                 |     Example                                                                                                                                                                                                                                                                                                                                          |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Command icon buttons**<br/> clicking a command button initiates an immediate action. <br/>                                                                                                 | ![screen shot of a labeled-icons toolbar ](images/cmd-toolbars-image19.png)<br/> Examples of icon command buttons from Windows Fax and Scan.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | **Mode icon buttons**<br/> clicking a mode button enters the selected mode. <br/>                                                                                                            | ![screen shot of a vertical toolbar ](images/cmd-toolbars-image20.png)<br/> Examples of mode buttons from Windows Paint.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
@@ -349,64 +348,72 @@ If you are using menu buttons and split buttons in a toolbar, try to use the fol
 
 These commands mirror the commands found in standard menu bars, so they should be used only for primary toolbars. This list shows the button labels (and type) with their order and separators, shortcut keys, and ellipses. **Note that the command for displaying and hiding the menu bar is in the View menu.**
 
-<dl> File <dl> NewCtrl+N  
+**File**
+NewCtrl+N  
 Open...Ctrl+O  
 Close  
-<separator>  
+&lt;separator&gt;  
 SaveCtrl+S  
 Save as...  
-<separator>  
+&lt;separator&gt;  
 Send to  
-<separator>  
+&lt;separator&gt;  
 Print...Ctrl+P  
 Print preview  
 Page setup  
-<separator>  
+&lt;separator&gt;  
 ExitAlt+F4(shortcut usually not given)  
-</dl> </dd> Edit(menu button) <dl> UndoCtrl+Z  
+
+**Edit(menu button)**
+UndoCtrl+Z  
 RedoCtrl+Y  
-<separator>  
+&lt;separator&gt;  
 CutCtrl+X  
 CopyCtrl+C  
 PasteCtrl+V  
-<separator>  
+&lt;separator&gt;  
 Select allCtrl+A  
-<separator>  
+&lt;separator&gt;  
 DeleteDel(shortcut usually not given)  
 Rename...  
-<separator>  
+&lt;separator&gt;  
 Find...Ctrl+F  
 Find nextF3(command usually not given)  
 Replace...Ctrl+H  
 Go to...Ctrl+G  
-</dl> </dd> <dd>Print(split button) <dl> Print...Ctrl+P  
+
+**Print(split button)**
+Print...Ctrl+P  
 Print preview  
-<separator>  
-Page setup  
-</dl> </dd> View(menu button) <dl> Menu bar(check if visible)  
+Page setup
+
+**View(menu button)**
+Menu bar(check if visible)  
 Details pane(check if visible)  
 Preview pane(check if visible)  
 Status bar(check if visible)  
-<separator>  
+
 Zoom  
 Zoom inCtrl++  
 Zoom outCtrl+-  
-<separator>  
-Text size(selected setting has bullet) <dl> Largest  
+  
+**Text size(selected setting has bullet)**
+
+Largest  
 Larger  
 Medium  
 Smaller  
 Smallest  
-</dl> </dd> <separator>  
+  
 Full screenF11  
-RefreshF5  
-</dl> </dd> Tools(menu button) <dl> ...  
-<separator>  
-Options  
-</dl>> </dd> Help(split button, use the Help icon) <dl> <program name> helpF1  
-<separator>  
-About <program name>  
-</dl> </dd> </dl>
+RefreshF5
+
+**Tools(menu button)** ...  
+
+**Options**
+Help(split button, use the Help icon) `<program name>` helpF1  
+
+About `<program name>`
 
 **Supplemental toolbars**
 

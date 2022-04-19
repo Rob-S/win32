@@ -87,7 +87,7 @@ The name of an assembly manifest is any valid file name followed by .manifest.
 
 For example, an assembly manifest that refers to myassembly would use the following file name syntax. You can omit the <*resource ID*> field if the assembly manifest is being installed as a separate file or if the resource ID is 1.
 
-<dl> myassembly.<resource ID>.manifest  
+<dl> myassembly.\<resource ID\>.manifest  
 </dl>
 
 > [!Note]  
@@ -218,7 +218,7 @@ The **comClass** element has the following attributes.
 
  
 
-The **comClass** element can have <progid>...</progid> elements as children, which list the version dependent progids.
+The **comClass** element can have &lt;progid&gt;...</progid> elements as children, which list the version dependent progids.
 
 The following example shows a **comClass** element included in a **file** element.
 

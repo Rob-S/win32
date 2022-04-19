@@ -15,16 +15,14 @@ api_location:
 
 Samples a texture.
 
-|                                                                                  |
-|----------------------------------------------------------------------------------|
-| &lt;Template Type&gt; Object.Sample( sampler\_state S, float Location \[, int Offset\] ); |
+&lt;Template Type&gt; Object.Sample( sampler\_state S, float Location \[, int Offset\] );
 
 ## Parameters
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">

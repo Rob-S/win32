@@ -14,8 +14,8 @@ The following constants are provided by the DirectXMath Library.
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -42,7 +42,7 @@ The following constants are provided by the DirectXMath Library.
 </tr>
 <tr class="odd">
 <td>XM_1DIV2PI<br/></td>
-<td>An optimal representation of 2/π.<br/></td>
+<td>An optimal representation of 1/2π.<br/></td>
 </tr>
 <tr class="even">
 <td>XM_PIDIV2<br/></td>

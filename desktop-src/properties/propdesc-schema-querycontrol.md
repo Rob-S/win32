@@ -58,8 +58,8 @@ If there are multiple elements, the last one is used. If no [queryControl]() ele
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -73,8 +73,8 @@ If there are multiple elements, the last one is used. If no [queryControl]() ele
 <td>Public. Optional. Default is &quot;Default&quot;. The following are valid values. 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -85,7 +85,7 @@ If there are multiple elements, the last one is used. If no [queryControl]() ele
 <tbody>
 <tr class="odd">
 <td>Default</td>
-<td>Default. Uses the default control, based upon the <typeInfo type=&quot;&quot;> attribute. The default types are listed below. Any other type results in using the &quot;Text&quot; control. 
+<td>Default. Uses the default control, based upon the \<typeInfo type=&quot;&quot;\> attribute. The default types are listed below. Any other type results in using the &quot;Text&quot; control. 
 <table>
 <thead>
 <tr class="header">

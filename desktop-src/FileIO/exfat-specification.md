@@ -529,11 +529,11 @@ The valid range of values for this field shall be:
 
 - At least 2<sup>20</sup>/ 2<sup>BytesPerSectorShift</sup>, which ensures the smallest volume is no less than 1MB
 
-- At most 2<sup>64</sup>- 1, the largest value this field can describe
+- At most 2<sup>64</sup>- 1, the largest value this field can describe.
 
-However, if the size of the Excess Space sub-region is 0, then the value
-of this field is ClusterHeapOffset + (2<sup>32</sup>- 11) \*
-2<sup>SectorsPerClusterShift</sup>.
+  However, if the size of the Excess Space sub-region is 0, then the largest value
+  of this field is ClusterHeapOffset + (2<sup>32</sup>- 11) \*
+  2<sup>SectorsPerClusterShift</sup>.
 
 #### 3.1.6 FatOffset Field
 
@@ -1332,7 +1332,7 @@ entry in a FAT represents exactly one cluster.
 <td>FatEntry[0]</td>
 <td>0</td>
 <td>4</td>
-<td>This field is mandatory and <a href="#412-fatentry1-field">Section 4.1.2</a> defines its contents.</td>
+<td>This field is mandatory and <a href="#411-fatentry0-field">Section 4.1.1</a> defines its contents.</td>
 </tr>
 <tr class="even">
 <td>FatEntry[1]</td>
@@ -2713,11 +2713,10 @@ name does not collide with the name under comparison.
 
 <div id="table-24-mandatory-first-128-up-case-table-entries" />
 
-**Table 24 Mandatory First 128 Up-case Table Entries**
+**Table 24 Mandatory first 128 up-case table entries**
 
-| **Table Index** | **Table Entries** |           |           |           |           |           |           |           |
+| Table index | + 0 | + 1 | + 2 | + 3 | + 4 | + 5 | + 6 | + 7 |
 |-----------------|-------------------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
-|                 | **+ 0**           | **+ 1**   | **+ 2**   | **+ 3**   | **+ 4**   | **+ 5**   | **+ 6**   | **+ 7**   |
 | **0000h**       | 0000h             | 0001h     | 0002h     | 0003h     | 0004h     | 0005h     | 0006h     | 0007h     |
 | **0008h**       | 0008h             | 0009h     | 000Ah     | 000Bh     | 000Ch     | 000Dh     | 000Eh     | 000Fh     |
 | **0010h**       | 0010h             | 0011h     | 0012h     | 0013h     | 0014h     | 0015h     | 0016h     | 0017h     |
@@ -2773,11 +2772,10 @@ range (from character codes 0000h to FFFFh inclusive).
 
 <div id="table-25-recommended-up-case-table-in-compressed-format" />
 
-**Table 25 Recommended Up-case Table in Compressed Format**
+**Table 25 Recommended up-case table in compressed format**
 
-| **Raw Offset** | **Compressed Table Entries** |         |         |         |         |         |         |         |
+| Raw offset | + 0 |  + 1       |  + 2       |  + 3       |  + 4       | + 5        |  + 6       | + 7        |
 |----------------|------------------------------|---------|---------|---------|---------|---------|---------|---------|
-|                | **+ 0**                      | **+ 1** | **+ 2** | **+ 3** | **+ 4** | **+ 5** | **+ 6** | **+ 7** |
 | **0000h**      | 0000h                        | 0001h   | 0002h   | 0003h   | 0004h   | 0005h   | 0006h   | 0007h   |
 | **0008h**      | 0008h                        | 0009h   | 000Ah   | 000Bh   | 000Ch   | 000Dh   | 000Eh   | 000Fh   |
 | **0010h**      | 0010h                        | 0011h   | 0012h   | 0013h   | 0014h   | 0015h   | 0016h   | 0017h   |

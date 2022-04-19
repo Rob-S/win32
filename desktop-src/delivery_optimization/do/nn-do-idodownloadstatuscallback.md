@@ -11,7 +11,6 @@ api_location:
 - do.h
 api_type:
 - HeaderDef
-ms.localizationpriority: low
 ms.topic: reference
 ms.date: 07/03/2019
 ---
@@ -26,7 +25,7 @@ The **IDODownloadStatusCallback** interface has these methods.
 
 | Method | Description |
 | ---- |:---- |
-| [IDODownloadStatusCallback::OnStatusChanged](./nf-do-idodownloadstatuscallback-onstatuschanged.md) | DO calls your implementation of this method any time a download status has changed. |
+| [IDODownloadStatusCallback::OnStatusChanged](./nf-do-idodownloadstatuscallback-onstatuschanged.md) | Delivery Optimization calls your implementation of this method any time a download status has changed. |
 
 ## Requirements
 

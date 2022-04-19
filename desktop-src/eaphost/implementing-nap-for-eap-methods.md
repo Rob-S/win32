@@ -31,7 +31,7 @@ For EAPHost API related NAP information refer to the following topics.
 
 -   [**EAP\_ATTRIBUTE\_TYPE**](/windows/desktop/api/eaptypes/ne-eaptypes-eap_attribute_type)
 -   [**EAP\_ERROR**](/windows/desktop/api/eaptypes/ns-eaptypes-eap_error)
--   [EAPHost Supplicant Frequently Asked Questions](eaphost-supplicant-frequently-asked-questions.md)
+-   [EAPHost Supplicant Frequently Asked Questions](eaphost-supplicant-frequently-asked-questions.yml)
 -   [**EAP Method Properties**](eap-method-properties.md)
 -   [**EapHostPeerBeginSession**](/previous-versions/windows/desktop/api/eappapis/nf-eappapis-eaphostpeerbeginsession)
 -   [**EAP Related Error and Information Constants**](eap-related-error-and-information-constants.md)
@@ -43,7 +43,6 @@ For EAPHost API related NAP information refer to the following topics.
 
 -   For a list of NAP resources, see [Network Access Protection](https://go.microsoft.com/fwlink/p/?linkid=84107).
 -   For Statement of Health information, see [Network Access Protection (NAP) Statement of Health (SoH) Messages](https://go.microsoft.com/fwlink/p/?linkid=83918).
--   For the Enterprise Networking Group webpage and blog, see [Network Access Protection (NAP)](https://go.microsoft.com/fwlink/p/?linkid=83845).
 -   For NAP API information, see [Network Access Protection](/windows/desktop/NAP/network-access-protection-start-page).
 
 

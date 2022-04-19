@@ -181,7 +181,7 @@ Confirmations have several usage patterns:
 
 
 
-|                                                                                                                                                                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+|   Usage                                                                                                                                                                    |    Example                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Routine confirmations**<br/> confirm that the user wants to proceed with a routine, low risk action. <br/>                                              | These confirmations are usually phrased "are you sure...?" and often have a don't show this message again check box to minimize their annoyance. <br/> ![screen shot of 'move folder to recycle bin?' ](images/mess-confirm-image11.png)<br/> ![screen shot of 'don't show message again' ](images/mess-confirm-image12.png)<br/> Examples of routine confirmations.<br/> **Note:** This pattern is usually unnecessary and should be avoided.<br/>                                                                                                                                                                                                                                                                                        |
 | **Risky action confirmations**<br/> confirm that the user wants to proceed with an action that has some risk and can't be easily undone. <br/>            | Because they have risk, these confirmations usually have a warning icon. <br/> ![Screenshot that shows an example of volume-formatting confirmation.](images/mess-confirm-image13.png)<br/> ![Screenshot that shows an example of permanent deletion confirmation.](images/mess-confirm-image14.png)<br/> Examples of risky action confirmations.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                     |
@@ -438,35 +438,13 @@ In this example, "permanently" indicates that the action can't be undone.
 
 -   **The supplemental instruction for a confirmation is based on its design pattern:**
 
-    <table>
-    <colgroup>
-    <col style="width: 50%" />
-    <col style="width: 50%" />
-    </colgroup>
-    <tbody>
-    <tr class="odd">
-    <td><strong>Pattern</strong><br/></td>
-    <td><strong>Supplemental instruction</strong><br/></td>
-    </tr>
-    <tr class="even">
-    <td>Unintended consequence confirmations <br/></td>
-    <td>Ask a single question to determine if the user wants to proceed. <br/></td>
-    </tr>
-    <tr class="odd">
-    <td>All others <br/></td>
-    <td>Explain any non-obvious reasons why the user might not want to proceed. Such reasons include: <br/>
-    <ul>
-    <li>Potential loss of one or more of the following:
-    <ul>
-    <li>A valuable asset, such as data loss or financial loss.</li>
-    <li>System access or integrity.</li>
-    <li>Privacy or control over confidential information.</li>
-    </ul></li>
-    <li>Actions that are irreversible.</li>
-    </ul></td>
-    </tr>
-    </tbody>
-    </table>
+    
+| Label | Value |
+|--------|-------|
+| <strong>Pattern</strong><br /> | <strong>Supplemental instruction</strong><br /> | 
+| Unintended consequence confirmations <br /> | Ask a single question to determine if the user wants to proceed. <br /> | 
+| All others <br /> | Explain any non-obvious reasons why the user might not want to proceed. Such reasons include: <br /><ul><li>Potential loss of one or more of the following:    <ul><li>A valuable asset, such as data loss or financial loss.</li><li>System access or integrity.</li><li>Privacy or control over confidential information.</li></ul></li><li>Actions that are irreversible.</li></ul> | 
+
 
     
 

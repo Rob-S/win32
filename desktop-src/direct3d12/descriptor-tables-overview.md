@@ -2,17 +2,13 @@
 title: Descriptor Tables Overview
 description: Each descriptor table stores descriptors of one or more types - SRVs, UAVe, CBVs, and Samplers. A descriptor table is not an allocation of memory; it is simply an offset and length into a descriptor heap.
 ms.assetid: 4A5749CE-DD84-40E1-B67F-31828165A631
-ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
 ---
 
 # Descriptor Tables Overview
 
-Each descriptor table stores descriptors of one or more types - SRVs, UAVe, CBVs, and Samplers. A descriptor table is not an allocation of memory; it is simply an offset and length into a descriptor heap.
-
--   [Referencing descriptor tables](#referencing-descriptor-tables)
--   [Related topics](#related-topics)
+Each descriptor table stores descriptors of one or more types&mdash;SRVs, UAVs, CBVs, and samplers. A descriptor table isn't an allocation of memory; it's simply an offset and length into a descriptor heap.
 
 ## Referencing descriptor tables
 
@@ -22,21 +18,10 @@ A descriptor table is actually just a sub-range of a descriptor heap. Descriptor
 
 It is certainly possible for an app to define very large descriptor tables when its shaders want the freedom to select from a vast set of available descriptors (often referencing textures) on the fly (perhaps driven by material data).
 
-The Root Signature references the descriptor table entry with a reference to the heap, the start location of the table (an offset from the start of the heap), and the length (in entries) of the table. The image below shows these concepts: the descriptor table pointers from the Root Signature and the descriptors within the descriptor heap referencing the full texture or buffer data in an upload heap.
+The Root Signature references the descriptor table entry with a reference to the heap, the start location of the table (an offset from the start of the heap), and the length (in entries) of the table. The image below shows these concepts: the descriptor table pointers from the Root Signature and the descriptors within the descriptor heap referencing the full texture or buffer data in a heap (in the case of a texture, the default heap).
 
 ![descriptor tables](images/descriptor-table.png)
 
 ## Related topics
 
-<dl> <dt>
-
-[Descriptor Tables](descriptor-tables.md)
-</dt> </dl>
-
- 
-
- 
-
-
-
-
+* [Descriptor Tables](descriptor-tables.md)
